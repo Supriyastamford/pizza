@@ -33,13 +33,15 @@
         <activity android:name=".address"></activity>
         <activity android:name=".delivery"></activity>
         <activity android:name=".login"></activity>
+        <activity android:name=".exit"></activity>
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyALnQ3fJMyXCFVQ-7J-ptjKm5roTHnNHhE"/>
+            android:value="28:B9:6B:52:F8:E9:6E:0B:35:91:58:91:DF:CD:57:6C:DB:F6:B9:3E
+"/>
     </application>
 
 </manifest>

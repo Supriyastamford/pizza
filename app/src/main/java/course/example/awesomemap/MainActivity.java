@@ -54,7 +54,33 @@ public class MainActivity extends Activity
         map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
     }
             // calls onMapLoaded when layout done
+            private void setUpMap() {
 
+                map.addMarker(
+                        new MarkerOptions()
+                                .position(new LatLng(-33.866, 151.195))
+                                .snippet("Pizza Hut")
+                                .flat(true)
+                                .title("Rama 9!"));
+                map.addMarker(
+                        new MarkerOptions()
+                                .position(new LatLng(-18.142, 178.431))
+                                .snippet("Pizza Hut")
+                                .flat(true)
+                                .title("Sukhamwit"));
+                map.addMarker(
+                        new MarkerOptions()
+                                .position(new LatLng(21.291, -157.821))
+                                .snippet("Pizza Hut")
+                                .flat(true)
+                                .title("BangNa"));
+                map.addMarker(
+                        new MarkerOptions()
+                                .position(new LatLng(37.423, -122.091))
+                                .snippet("Pizza Hut")
+                                .flat(true)
+                                .title("Ramkhamhaeng"));
+            }
 
     @Override
     public void onMapLoaded() {
@@ -161,7 +187,14 @@ public class MainActivity extends Activity
 
         return super.onOptionsItemSelected(item);
     }
-public void OnButtonClick(View v) {
+    public void OnClick(View v) {
+        if (v.getId() == R.id.login) {
+            Intent i = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(i);
+        }
+    }
+
+    public void OnButtonClick(View v) {
     if (v.getId() == R.id.menu) {
         Intent i = new Intent(MainActivity.this, toping.class);
         startActivity(i);
@@ -176,9 +209,47 @@ public void OnButtonClick(View v) {
 }
     public void onbuttonclick(View v) {
         if (v.getId() == R.id.next_3) {
-            Intent i = new Intent(MainActivity.this, address.class);
+            Intent i = new Intent(MainActivity.this, delivery.class);
             startActivity(i);
         }
 
     }
+
+    public void buttonclick(View v) {
+        if (v.getId() == R.id.next_4) {
+            Intent i = new Intent(MainActivity.this, exit.class);
+            startActivity(i);
+        }
+
+    }
+    public void clickextra(View v) {
+        if (v.getId() == R.id.Next_2) {
+            Intent i = new Intent(MainActivity.this, delivery.class);
+            startActivity(i);
+        }
+
+    }
+    public void clickspicy(View v) {
+        if (v.getId() == R.id.Next_3) {
+            Intent i = new Intent(MainActivity.this, delivery.class);
+            startActivity(i);
+        }
+
+    }
+    public void clicksupreme(View v) {
+        if (v.getId() == R.id.Next_4) {
+            Intent i = new Intent(MainActivity.this, delivery.class);
+            startActivity(i);
+        }
+
+    }
+
+    public void clickbbq(View v) {
+        if (v.getId() == R.id.Next_1) {
+            Intent i = new Intent(MainActivity.this, delivery.class);
+            startActivity(i);
+        }
+
+    }
+
 }

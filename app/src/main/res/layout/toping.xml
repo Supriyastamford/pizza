@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageButton1"
-        android:src="@drawable/Capture"
+        android:src="@drawable/extra"
         android:contentDescription="Sausage Pizza"
         android:onClick="showDetail"
         />
